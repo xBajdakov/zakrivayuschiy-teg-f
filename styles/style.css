@@ -275,7 +275,6 @@
 }
 
 .button__text {
-  text-transform: uppercase;
   mix-blend-mode: difference;
 }
 
@@ -346,6 +345,7 @@
 }
 
 .modal__button {
+  text-transform: uppercase;
   width: 100%;
   padding: 10px;
 }
