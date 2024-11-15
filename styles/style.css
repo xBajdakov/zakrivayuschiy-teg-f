@@ -23,10 +23,10 @@
   background-image: var(--page-background-image);
   background-size: cover;
   background-attachment: fixed;
-  font-family: var(--main-font-family, Inter, sans-serif);
+  font-family: var(--main-font-family, Inter), sans-serif;
   line-height: 21px;
   font-size: 18px;
-  font-variation-settings: var(--font-weight-text);
+  font-variation-settings: "wght" var(--font-weight-text);
   color: var(--text-color);
 }
 
@@ -47,7 +47,7 @@
   transform: translateX(0);
 }
 
-.button:focus{
+.button:focus {
   box-shadow: 2px 2px 0 var(--text-color, #000);
 }
 
@@ -178,8 +178,7 @@
   font-size: 18px;
   line-height: 22px;
   font-variation-settings: "wght" var(--font-weight-title);
-  border-bottom: 2px solid var(--text-color);
-
+  border-bottom: 2px solid var(--text-color); 
 }
 
 .image__container {
@@ -200,10 +199,9 @@
     0 1px var(--background-color), 0 -1px var(--background-color);
 }
 
-@supports ((-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff)) {
+@supports (-webkit-text-stroke: 1px #fff) {
   .image__label {
     text-shadow: none;
-    text-stroke: 1px var(--background-color);
     -webkit-text-stroke: 1px var(--background-color);
   }
 }
@@ -216,7 +214,7 @@
   height: clamp(23.188rem, 16.035rem + 30.516vw, 43.5rem);
 }
 
-.s__chistogo-lista{
+.s__chistogo-lista {
   filter:contrast(80%)
 }
 
@@ -266,7 +264,7 @@
   font-family: var(--accent-font-family);
 }
 
-.like-icon{
+.like-icon {
   width: 43px;
   height: 38px;
 }
@@ -277,6 +275,7 @@
 }
 
 .button__text {
+  text-transform: uppercase;
   mix-blend-mode: difference;
 }
 
@@ -309,7 +308,7 @@
   transition: border-color 0.3s ease;
 }
 
-.button__save-button{
+.button__save-button {
   margin: 0 auto 105px;
   padding: 15px 19px 15px 21px;
   display: flex;
@@ -324,7 +323,7 @@
   mix-blend-mode: difference;
 }
 
-.modal{
+.modal {
   padding: 29px 30px ;
   width: 357px;
   border: 2px solid var(--text-color);
@@ -333,7 +332,7 @@
   font-family: var(--accent-font-family);
 }
 
-.modal__container{
+.modal__container {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -350,8 +349,9 @@
   width: 100%;
   padding: 10px;
 }
-.modal__text{
+.modal__text {
   font-size: 14px;
+  text-transform: uppercase;
   font-weight: var(--font-weight-text);
 }
 
@@ -365,26 +365,26 @@
     margin-block-end: 16px;
   }
 
-  .header__theme-menu{
+  .header__theme-menu {
     margin:20px 0 25px 19px
   }
 
-  .image__label{
+  .image__label {
     top: 18px;
     right: 11px;
   }
 
-  .floppy{
+  .floppy {
     width: 28px;
     height: 28px;
   }
 
-  .button__save-button{
+  .button__save-button {
     flex-direction: column;
     padding: 14px 20px 16px 20px;
   }
 
-  .modal{
+  .modal {
     margin-block-start: 238px;
     padding: 28px 36px 27px 37px;
   }
