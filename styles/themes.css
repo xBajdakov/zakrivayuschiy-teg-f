@@ -5,53 +5,76 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 :root.theme-dark {
-    --text-color:var(--color-green, #00cc14);
-    --font-weight-title:785;
-    --font-weight-text:465;
-    --background-color:var(--color-black, #000000);
-    --button-text-color:var(--color-green,#007f0c);
+  --text-color: var(--color-green, #00cc14);
+  --font-weight-title: 785;
+  --font-weight-text: 465;
+  --background-color: var(--color-black, #000000);
+  --button-text-color: var(--color-green, #007f0c);
 
-    --page-background-image: repeating-linear-gradient(to bottom, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
+  --page-background-image: repeating-linear-gradient(
+      to bottom,
+      #000 0 2px,
+      rgb(0 0 0 / 0) 2px 4px
+    ),
     repeating-linear-gradient(to right, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
     linear-gradient(to bottom, #007f0c, #004306);
 }
 
-@media(prefers-color-scheme: dark) {
-:root.theme-dark {
-    --text-color:var(--color-green, #00cc14);
-    --font-weight-title:785;
-    --font-weight-text:465;
-    --background-color:var(--color-black, #000000);
-    --button-text-color:var(--color-green,#007f0c);
-    --page-background-image: repeating-linear-gradient(to bottom, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
-    repeating-linear-gradient(to right, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
-    linear-gradient(to bottom, #007f0c, #004306);
-}
+@media (prefers-color-scheme: dark) {
+  :root.theme-dark {
+    --text-color: var(--color-green, #00cc14);
+    --font-weight-title: 785;
+    --font-weight-text: 465;
+    --background-color: var(--color-black, #000000);
+    --button-text-color: var(--color-green, #007f0c);
+    --page-background-image: repeating-linear-gradient(
+        to bottom,
+        #000 0 2px,
+        rgb(0 0 0 / 0) 2px 4px
+      ),
+      repeating-linear-gradient(to right, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
+      linear-gradient(to bottom, #007f0c, #004306);
+  }
 }
 
 :root.theme-light {
-    --text-color: var(--color-black, #000000);
-    --font-weight-title:700;
-    --font-weight-text:400;
-    --background-color: var(--color-white, #ffffff);
-    --button-text-color:var(--color-white,#ffffff);
+  --text-color: var(--color-black, #000000);
+  --font-weight-title: 700;
+  --font-weight-text: 400;
+  --background-color: var(--color-white, #ffffff);
+  --button-text-color: var(--color-white, #ffffff);
 
-    --page-background-image:repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px),
-    repeating-linear-gradient(to right, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px),
+  --page-background-image: repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0 2px,
+      rgb(211 211 211 / 0) 2px 4px
+    ),
+    repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      rgb(211 211 211 / 0) 2px 4px
+    ),
     linear-gradient(to bottom, #e7e7e7, #e7e7e7 0.01%, #1a1a1a 100%);
 }
 
-@media(prefers-color-scheme: light) {
-:root {
+@media (prefers-color-scheme: light) {
+  :root {
     --text-color: var(--color-black, #000000);
-    --font-weight-title:700;
-    --font-weight-text:400;
+    --font-weight-title: 700;
+    --font-weight-text: 400;
     --background-color: var(--color-white, #ffffff);
-    --button-text-color:var(--color-white, #ffffff);
+    --button-text-color: var(--color-white, #ffffff);
 
-    --page-background-image:repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px),
-    repeating-linear-gradient(to right, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px),
-    linear-gradient(to bottom, #e7e7e7, #e7e7e7 0.01%, #1a1a1a 100%);
-}
-
+    --page-background-image: repeating-linear-gradient(
+        to bottom,
+        #d3d3d3 0 2px,
+        rgb(211 211 211 / 0) 2px 4px
+      ),
+      repeating-linear-gradient(
+        to right,
+        #d3d3d3 0 2px,
+        rgb(211 211 211 / 0) 2px 4px
+      ),
+      linear-gradient(to bottom, #e7e7e7, #e7e7e7 0.01%, #1a1a1a 100%);
+  }
 }
